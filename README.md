@@ -2,9 +2,9 @@
 ## What is Sudoku?
 Sudoku is a numeric logics game.
 The goal of the game is to fill a 9x9 matrix according to the following rules:
-    - Each cell can only be filled with numbers from 1-9;
-    - In each row and collumn, each number can only appear once;
-    - In each 3x3 block, all numbers from 1-9 must appear.
+- Each cell can only be filled with numbers from 1-9;
+- In each row and collumn, each number can only appear once;
+- In each 3x3 block, all numbers from 1-9 must appear.
 
 There are a lot of techniques to solving this game. In this project we will use the backtracking technique.
 
