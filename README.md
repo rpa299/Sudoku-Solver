@@ -1,5 +1,5 @@
 # Sudoku-Solver
-What is Sudoku?
+# What is Sudoku?
     Sudoku is a numeric logics game.
     The goal of the game is to fill a 9x9 matrix according to the following rules:
         Each cell can only be filled with numbers from 1-9;
@@ -8,7 +8,7 @@ What is Sudoku?
 
 There are a lot of techniques to solving this game. In this project we will use the backtracking technique.
 
-What is backtracking?
+# What is backtracking?
     Backtracking is a problem-solving algorithmic technique that involves finding a solution incrementally by trying different options and undoing them if they lead to a dead end. It is commonly used in situations where you need to explore multiple possibilities to solve a problem, like searching for a path in a maze or solving puzzles like Sudoku. When a dead end is reached, the algorithm backtracks to the previous decision point and explores a different path until a solution is found or all possibilities have been exhausted. [1]
 
 #TODO: 
