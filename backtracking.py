@@ -17,3 +17,9 @@
     Written by Rodrigo Almeida (rpa299)    
 """
 
+# print function
+def print(board):
+    for row in range(9):
+        for col in range(9):
+            print(board[row][col], end = " ")
+        print()
