@@ -47,3 +47,23 @@ def checkCol(board, col, valueAttempt):
 #check block
 #   true if valid
 #   false if invalid
+def checkBlock(board, row, col, valueAttempt):
+    if(row < 3):
+        rowIdx = [0,1,2]
+    elif(row < 6):
+        rowIdx = [3,4,5]
+    else:
+        rowIdx = [6,7,8]
+
+    if(col < 3):
+        colIdx = [0,1,2]
+    elif(col<6):
+        colIdx = [3,4,5]
+    else:
+        colIdx = [6,7,8]
+
+    for i in rowIdx:
+        for j in colIdx:
+            if(valueAttempt == board[i][j]):
+                return False
+    return True
