@@ -18,8 +18,28 @@
 """
 
 # print function
-def print(board):
+def printBoard(board):
     for row in range(9):
         for col in range(9):
             print(board[row][col], end = " ")
         print()
+
+#check row
+#   true if valid
+#   false if invalid
+def checkRow(board, row, col, valueAttempt):
+    for i in range(9):
+        if(i != col):
+            if(valueAttempt == board[row][i]):
+                return False
+    return True
+
+
+#check coll
+#   true if value
+#   false if invalid
+
+
+#check block
+#   true if valid
+#   false if invalid
