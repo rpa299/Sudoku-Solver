@@ -67,3 +67,30 @@ def checkBlock(board, row, col, valueAttempt):
             if(valueAttempt == board[i][j]):
                 return False
     return True
+
+#solve the puzzle
+#iterate through the board searching for cells to fill and then try each number from 1 to 9
+#recursively call the function to see if this number is valid or not.
+def solveSudoku(board):
+    for row in range(9):
+        for col in range(9):
+            if (board[row][col] == 0):
+                for possibleNumber in range(1,10):
+                    if(checkRow(board,row,possibleNumber) and checkCol(board,col,possibleNumber) and checkBlock(board,row,col,possibleNumber)):
+                        board[row][col] = possibleNumber
+                        if(solveSudoku(board)):
+                            return True
+                        board[row][col] = 0
+                return False
+    return True
+
+
+print("Initial Board: ")
+printBoard(board)
+print("------------------ ")
+
+solveSudoku(board)
+
+print("Solved Board: ")
+printBoard(board)
+print("------------------ ")
